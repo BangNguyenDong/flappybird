@@ -5,11 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FlappyBird</title>
-    <link rel="stylesheet" href="style.css" > 
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Squada+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Squada One', cursive;
+            background: linear-gradient(to bottom, #a2d4ec, #ffffff);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin: 20px 0 10px;
+            color: #2a5d84;
+        }
+
+        .student-names {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: #444;
+            background: #e0f7fa;
+            padding: 10px 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        }
+
+        canvas {
+            border: 3px solid #2a5d84;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+    </style>
 </head>
 <body>
+    <h1>Western Australian School System</h1>
+    <div class="student-names">
+        Li Ly (7D), Gia Nghi, Bảo Khang, Bảo Long
+    </div>
+
     <canvas id="canvas" width="276" height="414"></canvas>
+
     <script src="game.js"></script>
 </body>
 </html>
